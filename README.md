@@ -4,8 +4,7 @@ This is simple webpage for bookshop
 here I'm using for html,css only
 
 I attached some pics below,
-
-![Uploading Screenshot (14).png…]()
+![Screenshot (14)](https://user-images.githubusercontent.com/118151828/236386482-0f8e1241-5ccf-4bbd-b38c-e76d09dd896a.png)
 ![Screenshot (15)](https://user-images.githubusercontent.com/118151828/236386300-54090de8-aa25-4def-afde-56290d66c8db.png)
 ![Screenshot (16)](https://user-images.githubusercontent.com/118151828/236386307-38e8381a-c23c-4ff5-a6b5-65cbfa0b5c28.png)
 ![Screenshot (17)](https://user-images.githubusercontent.com/118151828/236386314-c1dbf635-1629-49c1-9a28-ad1fb614df54.png)
