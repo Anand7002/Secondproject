@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anand_Project</title>
+    <style>
+        #nav {
+            display: grid;
+            display: inline-flex;
+            grid-template-columns: 30% 70%;
+        }
+
+        #last {
+            background-color: rgb(236, 248, 248);
+            display: inline-flex;
+            margin-left: 10px
+        }
+
+        #nav2 {
+            padding: 70px;
+        }
+
+        #nav1 ul li {
+            display: inline-flex;
+            margin: 30px;
+        }
+
+        #img {
+            background-image: url('https://media.istockphoto.com/photos/abstract-technology-blue-spotlight-backgrounds-loopable-elements-4k-picture-id1174989484?k=20&m=1174989484&s=612x612&w=0&h=3-qv3K6iJYiYy9l6RyJtIpErEoo-u8DdfyZZvJwPGa4=');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            width: 1150px;
+            margin-left: 100px;
+        }
+        #img div{
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: 33% 33% 33%;
+        }
+
+        .item1 {
+            border: 1px solid red;
+            border-radius: 300px;
+            height: 300px;
+            width: 300px;
+            background-image: url('https://media.istockphoto.com/photos/cup-of-latte-or-cappuccino-coffee-with-a-book-in-coffee-shop-picture-id1125773979?k=20&m=1125773979&s=612x612&w=0&h=Li4Y0Xie_ykKDzfnia9dwySbeRyPaS9fjnAn2ziZt_M=');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .item2 {
+            border: 1px solid red;
+            border-radius: 300px;
+            height: 300px;
+            width: 300px;
+            background-image: url('https://media.istockphoto.com/photos/table-with-laptop-in-home-office-interior-picture-id1225431134?k=20&m=1225431134&s=612x612&w=0&h=OgpgEgzV05-wDEiDg2v1xT2uEsPHV19eoV_ehlze4hE=');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .item3 {
+            border: 1px solid red;
+            border-radius: 300px;
+            height: 300px;
+            width: 300px;
+            background-image: url('https://media.istockphoto.com/photos/books-and-textbook-on-wooden-desk-in-library-selective-focus-piles-of-picture-id1220342382?k=20&m=1220342382&s=612x612&w=0&h=jpBCSIBAy12PcEOoIK9ub2SvDgz9G5ceaOM44vyaAQs=');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .footer1{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .footer{
+            margin-top: 80px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="background-color: rgb(247, 247, 231);">
+        <div id="nav">
+            <div>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgSEhEZGBgYEhUSGhgYGhIYGRgaGhgZGhoYGBocIS4lHB8rHxoYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHzchJCE0MTQxMTQxNDQ0NDExMTQ0NDQxNDQxNDQ0NDQ0MTQ0NDQxND80NDQ0NDQxND80NDQ/P//AABEIAMQBAQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIEBQYHAwj/xABEEAACAQMABwQFCQYDCQAAAAABAgADBBEFBgcSITFBE1FhcSIygaHBFEJSYnJzkbGyJTM0NYLRIyR0FUNEU1SSs9Lh/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAiEQEBAAICAgICAwAAAAAAAAAAAQIRAxIhQSIxBFFhgZH/2gAMAwEAAhEDEQA/AOzREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERIzIGZTmTmY680vSTgWye5eMlykNbZLMZmBXTFV/3dsxHeTKxdXZ/3CfjJ3i6ZvMAzDC4uutBD7ZWNIVR69sw8VIIjvDTLZiYxdLUzwYlPtKRL6lWVhlWB8jLMpU09cyZEZlExIzGZRG9AaYfWPTVOzoPcVTwUcB1Zuir4y31N0097arc1E3C7NhRx9EHAl1dbGxRIEmQIiICIiAiIgIiICIiAiIgIiICIiAlDSuedY4UnuBPuko17Sl+7v8AJ6PPOGI94z0EvtHaISmMkBm7z0+zLHVinkvVPMtj8eM2MCcsMZl8q1b6ilZVJxJnXTKmDKpGIHmyA8xn2S0qaMpk7wXdPevAzIRJcZRjfk9VPUqbw+i//tJW9K8KiFPrc1/GZCQRHUedKqrDKsCPCKlQKCzEAAEknkAOZltUsVzvIdxs814D2jrOcbR9Y6xI0Xbnfq1CFdk9YKfmkDkT8JvDG5XSxpO0XWg31wVQnsaZZEHRm5F/HwncdULbs7K3TGMUUJ8yMn8581V7Y06pptzSotM+YYZn1JoxcUaYH/LT9Inp/IkxxxkKvIkCTPKhERAREQEREBERAREQEREBERAREQIlFRcgjvGJXKWEgwurg3e0pnmtQzNrMRUTsrgVOS1Rut4MOUyymYw8TS37VxETohERAREQIlLGVZnhdXCojO7BVRSzE9ABkmPsYDXbWRLG3aq2C7ZWmnVmx+Q5zVdlmrj+npO6y1WtvFN7mFPNuPfMHaI+ndImo+Ra0DkDoVB4Dzbr4Ts1OmFAVQAoAAHcPCdL8JJ7qvmHT38bVzwPyonP9Qn0fo+4ZadPfXINNPSXOPVHMT511vTdvrod1cn3gz6N0G29bUW55op+kTt+TPjjYtX6uDxByPCV5lkbcrxpnHep5H+xnpRuQ3A8GHNTwM8ct9srqJSGlU0EREBERAREQEREBERAREQEREBERAtby3DqVPmD1BHIieej65YFX9dPRPj3N7ZeGWN3bnIqJ668PtL9EzFmruKyES1trgMoYe0dQeoPjLma2iYiJQiIkFBM5JtM1he5rLomzbeLMFqFe/6Jx0HMzZ9o+tgsaO5TINeoCqL1UdXmK2VaptRQ3tyP8arkqG5ohOc+DNznbjkxnbL+lbdqnq+ljbrQQDOAzt1ZzzJmckCSZxtt80fOW0633NI1x9IK/wD3AzteoNxv2Fuw6Uwv4cJy3bRa7t6lTHr0QM+KnHxm77Hrre0eqcylR1/FiRPZy/Lhxv6W/TfGnjXtw3PgRxBHOe4kmeNlY0q7K25U68m5K39j4S+E8qtMMN1gCOv/AMloKhQhXPongH+Dd3nJ9DISZSvKVSwIiJQiIgIiICIiAiIgIiICIiBBEgiVSlhmBZ16JB7Sn63VejD+/jPWhcBxkdOBHUHuM9t2Wle3O9vpwb3MO4zOteVXoiW1vcBuB4MOa/28Jcb0su/KJMxOsGmqdpQa4qngo4Ac2bool/c3K01Z3YKqqWLHgABOK391V09fChSytrTOSeON0Hi58T0E3hhu7v1Fe+pmiaulLt9JXa5pK+UXozD1VXwX852hVHdLTRuj0oU1o0lCoihQB+fnLwRnn2v8QtTiDJiZRynbhZ5pUK4Hq1GTP2uPwlrsOvv4i3PPK1R5Y3TNx2nWHa6PrDqgFQf0zk+yi/7PSCKTgVEamfHqJ68Plw2fpr7j6GAkylZVPIyjE8qqAgqRkd3fPaU7sDHUKhpsKbZ3T6jn9LfCZAHjPG4oB1KtyPu7iPGW9jXOWpv66c/rL0aZ3pWRiQDJmkIiICIiAiIgIiICIiAiIgIiIESnEriBbV7dW58CORHAjyM8kqspC1Bkcg45H7Q6S7acp1911eq40bo0lqjMEd048c+op7u8xjjb4irDXrT9bSNyNF2IO4Hw7cRvEcye5B750fVTVynY0FoUxknDO/V26k/CW+rugnt0Wo+49wUCu4ULnHQETO07oE7p9FuoPD8O+aufjqLsCTIBkzCESDKWIAyenH8JRa31FalN6ZwQyMpHmOAnzLYO1teJxwaVyEPkHwfdOsbPtL1LjSF+wYmjvgqOJVWBwMefGaFtP0b2N/VAHo1AtVfEkcffPXwTVuN9xY+h6LhgGHIgMPbxnrNe1H0j29jQqZ49kFPmvo8fwmwTy5TV0iYiJBQ0xmlVKbtdRxQ4bxQ88zKzxuaYZWU9VImcp4WKqTAgFTwIyJ6TD6u1S1LdJyUYp7AeEzGYxu5EqYiJoIiICIiAiIgIiICIiAiJBMAZa3VytNS7uEVeLMxAAEp0jpCnQptWquFRFLMfLu8Z8/a6651r5yoJSgp9BB876z9/lOnFxXkqyNo1s17rXr/IdFq5DeizqCGbpw+ivjNx1C1JSxTffD3DD03+jn5q/E9ZyzVvXcWK7tCyp7xHpOxO+3t6CZxdsVx1taZ8mM75cOcnXGeF1XaceE861BWGGGfzHkZyihtl+nZH+lx8RM1o/azZOcVVekfEbw9pE4XgzxnmJqt0FOonqnfXuPrDwBnpSvVJwcq30W4fh3zHWOs9nWH+HdU2z03gDL+rWosPSdCMfSXh5TlccoLremp7RdYRZ2bkH/Eqf4dMDmS3M48BLbTOulnZ+rdb5zjs19P3jlNeXQ3+0rlNI16zPag7yUwpAGOSj6ueZmsZ1u8p4XTP7KtBG3sxUcYeue1bPMD5oPjMFts0XlKN2o4oxpN9luIJ9s6bb3KMMIynA5DhiYnXPRnymyrUhzNNmX7S8R+U3hyazmSS+Wl7E9Kb1KraE8UffX7Lc/fmdPFQb27vDexndyM478T5g1d01Vsq63FPG8oKsjZ3SORVp2PUO3uLmq2lrvKl07OjTGQq0/pEeM6c/HrLt6q2OhRKcxvTzMpnnWcKpY8gCTKi2Jr2mdJb/wDl6PpM3AkcvZ3zOWUkWRVqweFQ9DU4e+bDiWOi7LsqYTrzJ8ZfSYTUhUxETohERAREQEREBERAREiBMgiMwDA1PXPVR78JTNyadJSWZFXJdumTnkJgKOx+1Hr1qjcOhA4986WYmseTLGeKu3Mqux+1PqXFVfMgzFXmxxgM0bsE9A6/ETsMgmbx5s57Ja4Bd7L9IJ6qo4+o3wImKr6k6QT1rJyO9cH4z6UIjE6T8rOffle1fMK6q32eFlVz9nHxmUstQdJ1DjsGQHq7sB7jPor2xJl+TlfRa5hq3smpU2FS8ftWGDuDggPiebTpdKgqqERQqgAAADA8hPSVCcMsrl91NrSvYU34sgz38j7pbHRrL6ldgPothl/CZOUkzGoOVjUS3qXVRRRfNNxUbJK06hY72B3+Im/Lc1kAX5LwUYAVuAA7plsSqXLtfulu2GOlav8A0ryhtIXLepbbvixmbMTFxy/Ztr7WVzV/e1Ai9QvdPfQgtgWWhUR2X1iCGYefdMrX9Vvsn8pyHYwB8rvMePn+8abw4p1tvpbbXY8SqQZMrJERAREQEREBERAREQEgyZBkHnVzgkc8HHnOUtqxpq5dmq3vYrvtuje47u8ccE8MTqlaoFBZjgAEkngABzJnOL/acz1DQ0baPcMPnclPHGQBxx4zfH2m9RWI0roHS9gjXVPSBqqnpOpLHCjm2G5jym+ah6yfLrZarDddSUcfWHzh4GabpTSum6tCoXtKSUzTYNnOQvUjPWe2wz9xcfer+RnXPG3C268fobbtAvqlCxrVaL7jqFIYcxxE57oDWDS17QFvbA7wYl7p90AA8kXpN62oj9m1/Jf1CWOx4fs5PvH/AFGTHU47lr2emm6Z0TpjR6/K/lpqKpBfBZgufpIeY8ROmamaf+XWyVyMNnddRxw688eE9NdUBsLkEf8ADv8AlNS2I/wbjurHElvbC5WHp0O7LbjlB6W4279rHD34nLKOqemrj07i/wCyJJ9EMc4/p4Tqdzcqis9RgqqCxY8AAO8znNztKq1nanoyxevg43yOB8cdBM8dvqf6MPpbRWl9GJ8qW+NZEYFl9I4H1g3MeU6Pqfp0XtslwBuk+i69Aw54mgaw6S01UtqvbWtNKJpNvnPpBccfbMzsT/gG/wBQ3wnTPH4bv3v0emW2l6Qq29i9Sg5Rw6jeHPjzmlaG0zpe/oJRtQUVQRUuXwN855L5eE2za7/Ln+2su9l4/ZtDyb9RmZZOPevOz053piz0xowC6a7NVAwDYJZRnoyt0PLInWNVtMLd21O5UY314jj6LdRMdtLpb2jrgdyBvwOZjdjo/Z6/eP8ACMvlh29jeKrhQWYgAAkk9w4mcivNZL/Stw9DRpNOgpKtU4cRy3mPMZ6ATeNo921PR9dk5lN3PdmYfY1ZqlgKgHpVKrsx6ndO6M+yTGaxuVNMTT1T0zbgvR0iKpAPoOWw3h6Usti2flV3vD0t0bw+tvnPvzOw1B6J+yfynIdjf8Ze+3/yNN453LCq7HERODJERAREQEREBERAREQEiTIko1baKX/2fcdnne7Pp3Z4+6a9sZ7EWRKFe07QioeG99Ud+MYnQ7mkHUoyhlYFWB6g8xOX32yt6dU1NH3jUgx9Ukgr4BhxI851wynXrVbtrlpSlRtaxq1FXepsqgkZLEcAB1mmbDP3Fx96p9xl/YbMqeGe7uHuKrIyqzklUJHrAdTM3qTqiNHJUprWNTfcNkgLjGe6XeM47JfI8tqB/Ztx5L+oSx2Pfy9PvH/MzZdZ9DC8tnti5TfABYDJGCDPDVDV0WFuLZahcBmbeIAPE5xgTMynXQr1z/gbn/T1P0zT9iB/ylT74zftM2Ar0KtAtu9pTannu3hjMw2peqw0fRaitU1N59/JAGPwiZTpcRj9q7MNHVdzPEqGx9HPWU7JuxGj6fZhd7Lb/Le3t4+tNvu7NKqNSqLvKylWB6icxr7K61N2ayv3pox9XLAjwyOeO8y42XHrbobVtD0pRpWVZKlRVapTZEXI3mYjkBMPsUGLFv8AUP8ACV2+zGmUqfKLh61Z0Kiq/HsyfnIp4Zmf1N1YGj6BoLVNTNQvkgDn4CW2TDrBidrx/Zz/AG1l5sv/AJbQ8m/UZkNbNAfLrdrdqhTLA7ygE8PAz31Z0MLO2S2DlwgI3iACcnMx2+HUWG0T+X3H3RmH2OH9nr94/wAJtesGihdW9S2LlO0QrvAAkeODLPVDV0WNuLZahcBi28QAePhLMvj1Hnr1o43FjXpKMt2ZZfMcZqexjTKNbNaMwV6bswViASrHJI8jwnTGGek5vrHsvSrVNxaVjQcksyjO7k8yp5rLhlLjcchvek9J0qFNqlaoqKqkkkju6d85XsYcNd3jDkw3ge8FyRMzojZgN8VL+6e43eSEtuZ6Z75mtTtSVsKtWqtdn7UAbpAAUBiQB+OJZcZjZL5G5RETkhERAREQEREBERAREQEgyZElERKojXnYiJMSiBJiJAkYkxKEjEmIERJiQIiJQkSYkERiTEaFMmTEaCIiUIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiB/9k="
+                    style="height: 80px; width: 200px; mix-blend-mode: multiply; margin: 10px;">
+            </div>
+            <div id="nav1">
+                <ul>
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="Book.html">Books</a></li>
+                    <li><a href="language.html">Language</a></li>
+                    <li><a href="Author.html">Author</a></li>
+                    <li>
+                        <a href="Book.html"><input type="search" placeholder="Search Book" id="search"></a><br><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div id="img">
+                <div>
+                    <div style="padding: 100px;">
+                        <h1 style="color: white;">Welcome to Library</h1>
+                        <h3 style="color: white;">We provide the Highest Quality Books</h3>
+                        <h2 style="color: white;">VISIT OUR SERVICES</h2>
+                    </div>
+                    <div style="padding-left:20px ;">
+                        <a href="log-in.html"><button style="height: 50px;width: 200px; color:blue;" type="button"
+                                value="Log-in">log-in</button></a><br><br>
+                        <a href="Sign-up.html"><button style="height: 50px;width: 200px;" type="button"
+                                value="Sign-up">Sign-up</button></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        
+
+        <div class="grid">
+            <div class="item1" id="p" onmouseenter="img1()" onmouseleave="img2()"></div>
+            <div class="item2" onmouseenter="myFunction()">.</div>
+            <div class="item3" id="k" onmouseenter="img3()" onmouseleave="img4()">.</div>
+        </div><br>
+
+    </div>
+    <footer class="footer">
+        <hr>
+        <div class="footer1">
+            <div>
+                <img src="/logo.png" style="margin-top: 80px; width: 300px; mix-blend-mode: multiply;">
+            </div>
+            <div style="color: white;">
+                <h3 style="color: yellow;"><u>Address</u></h3><b>
+                    <address>No,007.<br><br>Anand Street<br><br>Anand Books Library<br><br>Madurai,Tamil
+                        Nadu<br><br>India-635 465</address>
+                </b>
+            </div>
+
+            <div style="color: white;">
+                <h3 style="color: yellow;"><u>Books Category</u></h3>
+                <ol style="list-style: circle;">
+                    <b>
+                        <li>National Stories</li><br>
+                        <li>Inspirational Books</li><br>
+                        <li>Cartoon Story</li><br>
+                        <li>Life Story</li><br>
+                        <li>Horror Story</li>
+                    </b>
+                </ol>
+            </div>
+
+            <div style="color: white;">
+                <h3 style="color: yellow;"><u>Contact</u></h3>
+                <ol style="list-style:square;">
+                    <b>
+                        <li>+91 88388 77002</li><br>
+                        <li>+1(635) 76 5678</li><br>
+                        <li>+6(23) 98 635 21</li><br>
+                        <li>www.anandlibrary.com</li><br>
+                        <li>uuu.linkedin.com/anandbooks</li>
+                    </b>
+                </ol>
+            </div>
+        </div>
+    </footer>
+    <hr>
+    
+    <script>
+        function img1() {
+            const x = document.getElementById('p').style.backgroundImage = ("url('https://media.istockphoto.com/photos/an-open-magic-book-bewitched-book-glows-in-the-darkness-magic-light-picture-id1084125188?k=20&m=1084125188&s=612x612&w=0&h=0mhUlx2pi49Uv3CRa0ik7kB8iLUU7TSXDPz8Tu_mWgs=')")
+        }
+        function img2() {
+            const y = document.getElementById('p').style.backgroundImage = ("url('https://media.istockphoto.com/photos/cup-of-latte-or-cappuccino-coffee-with-a-book-in-coffee-shop-picture-id1125773979?k=20&m=1125773979&s=612x612&w=0&h=Li4Y0Xie_ykKDzfnia9dwySbeRyPaS9fjnAn2ziZt_M=')")
+        }
+
+        function myFunction() {
+            document.open("image/html", "replace");
+            document.write("<h2>Learning about the Library...!</h2> <br><br> <p>A library is<b> a place where books and sources of information are stored.</b><br><br> They make it easier for people to get access to them for various purposes.<br><br> Libraries are very helpful and economical too.<br><br> They include books, magazines, newspapers, DVDs, manuscripts and more</p><br><br><br><a href='Project.html'><button>Home</button></a>");
+            document.close();
+        }
+
+
+        function img3() {
+            const x = document.getElementById('k').style.backgroundImage = ("url('https://media.istockphoto.com/photos/violet-empty-notepad-on-pastel-background-simple-3d-render-picture-id1325103413?k=20&m=1325103413&s=612x612&w=0&h=dlmnfX_2EDv9PhW3aChBkLT4PQuJyYg9GcAqdPOPm90=')")
+        }
+        function img4() {
+            const y = document.getElementById('k').style.backgroundImage = ("url('https://media.istockphoto.com/photos/books-and-textbook-on-wooden-desk-in-library-selective-focus-piles-of-picture-id1220342382?k=20&m=1220342382&s=612x612&w=0&h=jpBCSIBAy12PcEOoIK9ub2SvDgz9G5ceaOM44vyaAQs=')")
+        }
+
+        
+    </script>
+
+</body>
+
+</html>
